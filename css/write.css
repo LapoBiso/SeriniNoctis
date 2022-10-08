@@ -1,0 +1,48 @@
+*{
+    font-family: "Times New Roman", Times, serif;
+    margin:0;
+    padding:0;
+}
+
+#writeWrapper{
+    width:50%;
+    margin:3% auto;
+
+}
+
+
+.writeElement{
+    margin-bottom:3%;
+    position: absolute;
+}
+
+.inputWrite{
+    padding:0.5%;
+    border-radius: 5px;
+    border: solid 1px deeppink;
+}
+
+.inputWrite:disabled{
+    background-color: lightgray;
+    color: black;
+}
+
+#sendButton{
+    background-color: darkmagenta;
+    color:white;
+}
+
+#sendButton:hover{
+    background-color: white;
+    border: 1px darkmagenta solid;
+    color: black;
+}
+
+#sendButton:active{
+    background-color: darkmagenta;
+    color:white;
+}
+
+.titleform{
+    font-weight: 700;
+}

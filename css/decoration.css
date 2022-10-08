@@ -12,7 +12,8 @@
 }
 
 #navbar{
-    width: 70%;
+    max-width: 1060px;
+    width: 90%;
     margin: auto;
 }
 
@@ -20,25 +21,26 @@
 #header_main{
     margin: auto;
     z-index: 2;
-
 }
 
 #title{
     height: 25px;
-    width: 70%;
+    width: 90%;
+    max-width: 1060px;
     margin: 8px auto 0 auto;
     text-align: center;
     position: absolute;
     top: 0;
+    display: block;
 }
 
-#title ul{
+.iconList{
     list-style-type: none;
     width:100%;
+
 }
 
-#title li{
-
+.icon{
     margin:0 35px 0 0;
     float: left;
 }
@@ -63,7 +65,7 @@
 
 #title img{
 
-    width:20%;
+    width:200px;
     float:left;
     margin:5px;
 }
@@ -109,7 +111,8 @@ footer{
 #content{
     padding: 30px 0 0 0;
     margin: auto;
-    width: 65%;
+    width: 90%;
+    max-width: 1000px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -127,7 +130,12 @@ footer{
     text-align: center;
     position: relative;
     height: 8%;
+    max-height: 60px;
     background-color: black;
+}
+
+.image img{
+    max-height: 60px;
 }
 
 #scritta{
@@ -179,46 +187,66 @@ footer{
 }
 
 #image-back{
+
     position: relative;
     width:100%;
-
-}
-
-#image-back img{
-    width:100%;
-
+    text-align: center;
 
 }
 
 #info{
-    margin-top: 20px;
     width: 100%;
-    top:0;
+    text-align: center;
+    margin: auto;
+}
+
+#info p{
     position: absolute;
     display: block;
     text-align: center;
-    z-index: 1;
-    color: white;
+}
+
+#info img{
+    width: 100%;
+    position: relative;
+    text-align: center;
 }
 
 #p1{
+    width: 100%;
+    color:white;
+    top:0;
     font-size: 40px;
 }
 
 #p2{
+    width: 100%;
+    color:white;
+    top:20%;
     font-size: 20px;
 }
 
 #p3{
-    margin: 0 auto 0 auto;
+    top:35%;
+    margin: auto;
     width: 40%;
     font-size: 25px;
     color: deeppink;
     background-color:white;
 }
 
+#p3_container{
+    position:absolute;
+    top:35%;
+    margin:auto;
+    width:100%;
+    text-align: center;
+}
+
 #p4{
-    margin-top: 90px;
+    top:80%;
+    color:white;
+    width: 100%;
 }
 
 .image2{
@@ -244,26 +272,23 @@ footer{
     opacity: 40%;
 }
 
-#p5{
-    width: 100%;
-    top:10%;
+.image2 p{
+    width:100%;
     position: absolute;
     display: block;
     text-align: center;
     z-index: 1;
     color: white;
+}
+
+#p5{
+    top:10%;
     font-size: 20px;
 }
 
 #p6{
     margin-top: 20px;
-    width: 100%;
     top:30%;
-    position: absolute;
-    display: block;
-    text-align: center;
-    z-index: 1;
-    color: white;
     font-size:60px
 }
 
@@ -288,4 +313,178 @@ footer{
 .text2:first-letter{
     font-size: 3em;
     color:deeppink;
+}
+
+#dropdown{
+    display: none;
+    padding:16px 0 16px 0;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+
+    float: right;
+    cursor: pointer;
+}
+
+#dropbtn{
+
+}
+
+#text{
+
+}
+
+#dropbtn div{
+    display: block;
+    background-color: white;
+    width:30px;
+    margin-bottom: 5px;
+    height: 2px;
+    border-radius: 5px;
+}
+
+#dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    width: 100%;
+    z-index: 1;
+}
+
+#dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown:hover #dropdown-content {display: block;}
+
+#background_menu{
+    z-index: 1;
+
+}
+
+.menu-content {
+    top:0;
+    font-family: 'Oswald', sans-serif;
+    height: 249px;
+    overflow: hidden;
+
+}
+
+#collapsable-menu {
+    display: block;
+    color:white;
+    box-shadow: 1px 1px 1px;
+}
+
+#collapsable-menu ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+#collapsable-menu li{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background_col{
+    z-index: -1;
+    background-color: black;
+    width:100%;
+    height: 100%;
+}
+
+
+.menu-content img{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    opacity: 20%;
+}
+
+.icon2{
+    text-decoration: none;
+}
+
+.icon2_menu{
+    padding: 0 0 0 40px;
+    top:30%;
+    position: absolute;
+}
+
+.icon2_menu h4{
+    top:20%;
+    z-index: initial;
+    color: lightgray;
+    display: inline;
+    margin: 0;
+
+}
+
+.icon2_menu p{
+    top:20%;
+    color: darkgray;
+    display: inline;
+    margin:0;
+}
+
+.underSection{
+    display: block;
+    z-index: initial;
+    border: deeppink 3px solid;
+}
+
+#collapsable-menu a {
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+#menu-list h4:hover{
+    color: #f1f1f1;
+}
+
+
+
+@media (max-width:946px){
+    #p3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 876px)
+{
+
+    #p6{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 762px){
+    #title ul{
+        display: none;
+    }
+
+    #content{
+        flex-direction: column;
+    }
+
+    #firstColumn{
+        margin: 0;
+    }
+
+    #dropdown{
+        display: inline-block;
+    }
+}
+
+@media (min-width:763px){
+    #collapsable-menu{
+        display: none;
+    }
 }
